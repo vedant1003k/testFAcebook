@@ -10,8 +10,8 @@ function App() {
 
   const responseFacebook = (response) => {
     console.log(response);
-    // setData(response);
-    // setPicture(response.picture.data.url);
+    setData(response);
+    setPicture(response.picture.data.url);
     if (response.accessToken) {
       setLogin(true);
     } else {
